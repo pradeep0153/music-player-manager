@@ -6,5 +6,6 @@ int main()
     cout<<"songs list "<<endl;
     cout<<"songs name"<<endl;
     cout<<"number of songs"<<endl;
-    cout<<"Shuffle";
+    cout<<"Shuffe";
+    cout<<"repeat"
 }
