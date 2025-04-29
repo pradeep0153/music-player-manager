@@ -8,4 +8,5 @@ int main()
     cout<<"number of songs"<<endl;
     cout<<"Shuffe";
     cout<<"repeat"
+    cout<<"andalalo"
 }
