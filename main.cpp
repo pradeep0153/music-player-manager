@@ -39,7 +39,7 @@ public:
 
         string title, artist;
         while (getline(file, title) && getline(file, artist)) {
-            addSong(title, artist, false); // false = don't auto-save while loading
+            addSong(title, artist, false);
         }
 
         file.close();
@@ -144,7 +144,7 @@ int main() {
         cout << "1. Add Song\n2. Play Current Song\n3. Next Song\n4. Previous Song\n5. Delete Current Song\n6. Show Playlist\n0. Exit\n";
         cout << "Enter your choice: ";
         cin >> choice;
-        cin.ignore(); // ignore newline
+        cin.ignore();
 
         switch (choice) {
             case 1:
