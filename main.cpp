@@ -3,13 +3,17 @@
 #include <fstream>
 using namespace std;
 
-struct Song {
+class Song {
+private:
     string title;
     string artist;
     Song* next;
     Song* prev;
 
-    Song(string t, string a) : title(t), artist(a), next(nullptr), prev(nullptr) {}
+    friend class Playlist;
+
+public:
+    Song(const string& t, const string& a) : title(t), artist(a), next(nullptr), prev(nullptr) {}
 };
 
 class Playlist {
@@ -170,7 +174,7 @@ int main() {
                 myPlaylist.showPlaylist();
                 break;
             case 0:
-                cout << "Goodbye!"<<endl;
+                cout << "Goodbye!" << endl;
                 break;
             default:
                 cout << "Invalid choice.\n";
